@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchEstimationTestingProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchEstimationTestingProject.Infrastructure", "src\Infrastructure\SchEstimationTestingProject.Infrastructure.csproj", "{3AC834D3-F934-430C-9857-253E2E7E4954}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{BB6636E7-CB50-46CF-9128-949D769B3D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchEstimationTestingProject.Apps.WebApi", "src\Apps\WebApi\SchEstimationTestingProject.Apps.WebApi.csproj", "{68D67099-A510-4780-AF24-240DF5277468}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,9 +50,23 @@ Global
 		{3AC834D3-F934-430C-9857-253E2E7E4954}.Release|x64.Build.0 = Release|Any CPU
 		{3AC834D3-F934-430C-9857-253E2E7E4954}.Release|x86.ActiveCfg = Release|Any CPU
 		{3AC834D3-F934-430C-9857-253E2E7E4954}.Release|x86.Build.0 = Release|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Debug|x64.Build.0 = Debug|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Debug|x86.Build.0 = Debug|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Release|x64.ActiveCfg = Release|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Release|x64.Build.0 = Release|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Release|x86.ActiveCfg = Release|Any CPU
+		{68D67099-A510-4780-AF24-240DF5277468}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{272059D8-7209-4C85-A28F-309111B626D8} = {8A310A03-9A69-4F65-B1CB-55F29757892F}
 		{3AC834D3-F934-430C-9857-253E2E7E4954} = {8A310A03-9A69-4F65-B1CB-55F29757892F}
+		{BB6636E7-CB50-46CF-9128-949D769B3D07} = {8A310A03-9A69-4F65-B1CB-55F29757892F}
+		{68D67099-A510-4780-AF24-240DF5277468} = {BB6636E7-CB50-46CF-9128-949D769B3D07}
 	EndGlobalSection
 EndGlobal
