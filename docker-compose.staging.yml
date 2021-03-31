@@ -1,0 +1,14 @@
+version: "2.4"
+
+services:
+  webapi:
+    build:
+      context: ./src
+      dockerfile: ./Apps/WebApi/Dockerfile
+    ports:
+      - "5000:80"
+    networks:
+      - step_net
+
+networks:
+  step_net:
