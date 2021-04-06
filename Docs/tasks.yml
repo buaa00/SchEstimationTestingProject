@@ -1,0 +1,9 @@
+UserStories:
+  - text: "Korisnik moze da kreira svoj nalog/novcanik unosom imena, prezimena, jmbg-a, banke, bankovnog racuna i PIN-a, i dobija jedinstveni sestocifreni PASS."
+    tasks:
+      - text: "Napraviti i podesiti git repozitorijum, solution, projekate u solutionu, Docker infrastrukturu"
+        estimatedTime: 20
+        realTime: 20
+      - text: "Definisati domenski model i napraviti dijagram domenskog modela"
+        estimatedTime: 60
+        realTime:
