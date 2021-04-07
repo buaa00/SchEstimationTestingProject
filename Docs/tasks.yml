@@ -1,9 +1,45 @@
 UserStories:
   - text: "Korisnik moze da kreira svoj nalog/novcanik unosom imena, prezimena, jmbg-a, banke, bankovnog racuna i PIN-a, i dobija jedinstveni sestocifreni PASS."
+    estimatedTime: 300
+    realTime: 
     tasks:
       - text: "Napraviti i podesiti git repozitorijum, solution, projekate u solutionu, Docker infrastrukturu"
         estimatedTime: 20
         realTime: 20
-      - text: "Definisati domenski model i napraviti dijagram domenskog modela"
-        estimatedTime: 60
+        done: true
+      - text: "Definisati domenski model za korisnika, novcanik i banku"
+        estimatedTime: 40
+        realTime: 60
+        done: true
+      - text: "Napraviti interfejs za repozitorijum za korisnika"
+        estimatedTime: 10
+        realTime: 10
+        done: true
+      - text: "Napraviti interfejs za repozitorijum za novcanik"
+        estimatedTime: 10
+        realTime: 10
+        done: true
+      - text: "Napraviti interfejs za repozitorijum za banku"
+        estimatedTime: 10
+        realTime: 10
+        done: true
+      - text: "Napraviti interfejs za infrastrukturni servis za pozivanje API-ja banke"
+        estimatedTime: 10
+        realTime: 10
+        done: true
+      - text: "Napraviti aplikativni servis koji implementira use case registrovanja korisnika i kreiranja novcanika"
+        estimatedTime: 40
         realTime:
+        done: false
+      - text: "Implementirati interfejse za repozitorijume korisnika, novcanika i banke"
+        estimatedTime: 40
+        realTime:
+        done: false
+      - text: "Implementirati interfejs za infrastrukturni servis za pozivanje API-ja banke"
+        estimatedTime: 30
+        realTime:
+        done: false
+      - text: "Napraviti rutu na WebApi aplikaciji koja izlaže use case registrovanja korisnika i kreiranja novcanika"
+        estimatedTime: 40
+        realTime:
+        done: false

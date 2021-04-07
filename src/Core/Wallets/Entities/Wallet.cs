@@ -1,5 +1,4 @@
 using System;
-using SchEstimationTestingProject.Core.Banks.Entities;
 using SchEstimationTestingProject.Core.Users.Entities;
 
 namespace SchEstimationTestingProject.Core.Wallets.Entities
@@ -13,14 +12,19 @@ namespace SchEstimationTestingProject.Core.Wallets.Entities
         public string BankAccountPIN { get; set; }
         public decimal Balance { get; private set; }
 
-        public Wallet(User owner, Bank bank, string bankAccountNumber, string bankAccountPIN)
+        public Wallet(User owner, string bankName, string bankAccountNumber, string bankAccountPIN)
         {
             Id = Guid.NewGuid().ToString();
             OwnerId = owner.Id;
-            BankName = bank.Name;
+            BankName = bankName;
             BankAccountNumber = bankAccountNumber;
             BankAccountPIN = bankAccountPIN;
             Balance = 0;
+        }
+
+        public Wallet()
+        {
+            
         }
     }
 }

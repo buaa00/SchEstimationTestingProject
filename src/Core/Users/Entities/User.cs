@@ -15,5 +15,10 @@ namespace SchEstimationTestingProject.Core.Users.Entities
             Informations = info;
             PasswordHash = passwordHash;
         }
+
+        public User()
+        {
+            
+        }
     }
 }
