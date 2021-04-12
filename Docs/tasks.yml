@@ -1,7 +1,8 @@
 UserStories:
   - text: "Korisnik moze da kreira svoj nalog/novcanik unosom imena, prezimena, jmbg-a, banke, bankovnog racuna i PIN-a, i dobija jedinstveni sestocifreni PASS."
     estimatedTime: 300
-    realTime: 
+    realTime: 360
+    additional: "Nisu zapisani svi taskovi :("
     tasks:
       - text: "Napraviti i podesiti git repozitorijum, solution, projekate u solutionu, Docker infrastrukturu"
         estimatedTime: 20
@@ -29,17 +30,163 @@ UserStories:
         done: true
       - text: "Napraviti aplikativni servis koji implementira use case registrovanja korisnika i kreiranja novcanika"
         estimatedTime: 40
-        realTime:
+        realTime: 60
         done: false
       - text: "Implementirati interfejse za repozitorijume korisnika, novcanika i banke"
         estimatedTime: 40
-        realTime:
+        realTime: 40
         done: false
       - text: "Implementirati interfejs za infrastrukturni servis za pozivanje API-ja banke"
         estimatedTime: 30
-        realTime:
+        realTime: 30
         done: false
       - text: "Napraviti rutu na WebApi aplikaciji koja izlaže use case registrovanja korisnika i kreiranja novcanika"
         estimatedTime: 40
+        realTime: 60
+        done: false
+  - text: "Kao korisnik potrebno je da mogu da prebacim novac sa povezanog bankovnog racuna na nalog/novcanik u appu"
+    estimatedTime: 70
+    realTime: 
+    additional: ""
+    tasks:
+      - text: "Dodati metodu za withdraw operaciju na servisu za pozivanje API-ja banke"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti entitet DepositTransaction"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti repozitorijum za entitet DepositTransaction"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti aplikativni servis i metodu koja implementira prebacivanje sa bankovnog racuna na novcanik u appu"
+        estimatedTime: 20
+        realTime: 
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja uplate novca iz banke na novcanik"
+        estimatedTime: 20
+        realTime: 
+        done: false
+  - text: "Kao korisnik potrebno je da mogu da prebacim novac sa naloga/novcanika na  povezani bankovni racun"
+    estimatedTime: 70
+    realTime: 
+    additional: ""
+    tasks:
+      - text: "Dodati metodu za deposit operaciju na servisu za pozivanje API-ja banke"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti entitet WithdrawTransaction"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti repozitorijum za entitet WithdrawTransaction"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti aplikativni servis i metodu koja implementira prebacivanje novca na bankovni racun sa novcanika u appu"
+        estimatedTime: 20
+        realTime: 
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja isplate novca sa novcanika na racun u banci"
+        estimatedTime: 20
+        realTime: 
+        done: false
+  - text: "Kao korisnik potrebno je da mogu da vrsim transfer novca sa svog na neki drugi novcanik u sistemu"
+    estimatedTime: 60
+    realTime: 
+    additional: ""
+    tasks:
+      - text: "Napraviti entitet TransferWithdrawTransaction i TransferDepositTransaction"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti repozitorijum za entitete TransferWithdrawTransaction i TransferDepositTransaction"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti aplikativni servis i metodu koja implementira transfer novca izmedju novcanika"
+        estimatedTime: 20
+        realTime: 
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja transfera novca sa jednog novcanika na drugi u sistemu"
+        estimatedTime: 20
+        realTime: 
+        done: false
+  - text: "Kao korisnik potrebno je da mogu da proverim stanje na svom novcaniku u svakom trenutku"
+    estimatedTime: 40
+    realTime: 
+    additional: ""
+    tasks:
+      - text: "Napraviti aplikativni servis i metodu koja implementira vracanje informacija o stanju novcanika korisnika"
+        estimatedTime: 20
+        realTime: 
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja pregleda stanja novcanika korisnika"
+        estimatedTime: 20
+        realTime: 
+        done: false
+  - text: "Korisniku blokiranog novcanika dozvoljene su samo operacije upita stanja i pregleda transakcija"
+    estimatedTime: 30
+    realTime: 
+    additional: ""
+    tasks:
+      - text: "Dodati informaciju o tome da li je korisnik blokiran u entitet User"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Implementirati pravilo da blokirani korisnik ne sme da uplacuje, podize ili prebacuje novac u okviru sistema ako je blokiran u aplikativnim servisima"
+        estimatedTime: 20
+        realTime: 
+        done: false
+  - text: "Kao korisnik potrebno je da mogu da vidim listu svojih transakcija"
+    estimatedTime: 40
+    realTime: 
+    additional: ""
+    tasks:
+      - text: "Napraviti metodu u repozitorijumu koja vraca sve transakcije korisnika, sa stranicenjem"
+        estimatedTime: 20
+        realTime: 
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja pregleda transakcija korisnika"
+        estimatedTime: 20
+        realTime: 
+        done: false
+  - text: "Kao korisnik potrebno je da mogu da promenim svoj PASS"
+    estimatedTime: 40
+    realTime:
+    additional: ""
+    tasks:
+      - text: "Dodati metodu u User repozitorijumu za azuriranje korisnika"
+        estimatedTime: 10
         realTime:
         done: false
+      - text: "Napraviti metodu u aplikativnom servisu koja implementira slucaj koriscenja promene lozinke"
+        estimatedTime: 10
+        realTime:
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja promene lozinke za korisnika"
+        estimatedTime: 20
+        realTime:
+        done: false
+  - text: "Administrator moze da blokira/odblokira odredjeni novcanik/nalog"
+    estimatedTime: 40
+    realTime:
+    additional: ""
+    tasks:
+      - text: "Implementirati postavljanje admin passworda za ceo sistem kroz appsettings konfiguraciju"
+        estimatedTime: 10
+        realTime: 
+        done: false
+      - text: "Napraviti metodu u aplikativnom servisu koja implementira slucaj koriscenja blokiranja korisnickog naloga"
+        estimatedTime: 10
+        realTime:
+        done: false
+      - text: "Napraviti rutu na aplikaciji WebApi koja omogucava pozivanje slucaja koriscenja blokiranja korisnickog naloga"
+        estimatedTime: 20
+        realTime:
+        done: false
+
+
